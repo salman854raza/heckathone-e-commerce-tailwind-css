@@ -1,0 +1,234 @@
+/* .container--0- {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1440px;
+    height: 729px;
+    background-color: #ffffff;
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
+    padding: 120px 0px 120px 0px;
+  }
+  .container-0-1-0 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1440px;
+    height: 729px;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-1-2-0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    display: flex;
+  }
+  .container-2-3-0 {
+    position: relative;
+    width: 599px;
+    height: 321px;
+    justify-content: start;
+    align-items: start;
+    gap: 35px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-1-2-1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1440px;
+    height: 729px;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-0-1-1 {
+    position: absolute;
+    left: 59px;
+    top: 0px;
+    width: 1322px;
+    height: 91px;
+    justify-content: start;
+    align-items: start;
+  }
+  .text-3-4-0 {
+    width: 100%;
+    height: 100%;
+    color: #252b42;
+    font-size: 16px;
+    font-family: Montserrat, "Bold";
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+  }
+  .container-2-3-1 {
+    position: relative;
+    width: 415px;
+    height: 280px;
+    justify-content: start;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-3-4-0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 21px;
+    display: flex;
+  }
+  .container-2-3-2 {
+    position: absolute;
+    left: 364px;
+    top: 16px;
+    width: 815px;
+    height: 58px;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-4-5-0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #23a6f0;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 40px 15px 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .container-5-6-0 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #23a6f0;
+    justify-content: start;
+    align-items: center;
+    border-radius: 5px;
+    gap: 15px;
+    display: flex;
+    padding: 15px 25px 15px 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .text-6-7-0 {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat, "Bold";
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+  }
+  .container-4-5-1 {
+    position: absolute;
+    left: 86px;
+    top: 0px;
+    width: 214px;
+    height: 52px;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-4-5-2 {
+    position: absolute;
+    left: 144px;
+    top: 0px;
+    width: 52px;
+    height: 24px;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-4-5-3 {
+    position: absolute;
+    left: 217px;
+    top: 0px;
+    width: 58px;
+    height: 24px;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-3-4-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    gap: 45px;
+    display: flex;
+  }
+  .container-6-7-1 {
+    position: absolute;
+    left: 177px;
+    top: 21px;
+    width: 12px;
+    height: 10px;
+    background-color: #ffffff;
+    justify-content: start;
+    align-items: start;
+  }
+  .container-0-1-2 {
+    position: relative;
+    width: 1050px;
+    height: 545px;
+    justify-content: start;
+    align-items: start;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 112px 0px 112px 0px;
+  }
+  .text-3-4-1 {
+    width: 542px;
+    height: 80px;
+    color: #252b42;
+    font-size: 58px;
+    font-family: Montserrat, "Bold";
+    font-weight: 700;
+    text-align: left;
+    vertical-align: top;
+  }
+  .text-3-4-2 {
+    width: 376px;
+    height: 60px;
+    color: #737373;
+    font-size: 20px;
+    font-family: Montserrat, "Regular";
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }
+  .container-3-4-3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    display: flex;
+  }
+  .text-5-6-0 {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Montserrat, "Bold";
+    font-weight: 700;
+    text-align: center;
+    vertical-align: top;
+  } */

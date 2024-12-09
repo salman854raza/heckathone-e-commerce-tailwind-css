@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/dist/client/link";
 import React from "react";
 import {
   FaFacebook,
@@ -59,7 +60,9 @@ export default function Header() {
             </a>
             <RiArrowDownSLine className="text-black hover:text-cyan-400" />
           </div>
-          <a href="#" className="text-slate-600 hover:text-cyan-400">About</a>
+          <Link href="/about" className="text-slate-600 hover:text-cyan-400" legacyBehavior>
+  About
+</Link>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Blog</a>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Contact</a>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Pages</a>
