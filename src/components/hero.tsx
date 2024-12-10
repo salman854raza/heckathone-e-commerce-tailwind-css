@@ -9,8 +9,8 @@ export default function hero() {
     "./women4.png",
     "./women5.png",
     "./men1.png",
-    "https://images.unsplash.com/photo-1496181133206-80ce9b88a853",
-    "https://images.unsplash.com/photo-1481349518771-20055b2a7b24",
+    "./product-cover-5.png",
+    "./product-cover-5.png",
     "./cover1.png",
   ];
 
@@ -44,7 +44,7 @@ export default function hero() {
             {/* Women */}
             <div className="relative group overflow-hidden">
               <img 
-                src="./womens2.png"
+                src="./women6.png"
                 alt="Women's Fashion"
                 className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -56,7 +56,7 @@ export default function hero() {
             {/* Accessories */}
             <div className="relative group overflow-hidden">
               <img 
-                src="./mens2.png"
+                src="./womens2.png"
                 alt="Accessories"
                 className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -68,7 +68,7 @@ export default function hero() {
             {/* Kids */}
             <div className="relative group overflow-hidden">
               <img 
-                src="./womens1.png"
+                src="./mens2.png"
                 alt="Kids Fashion"
                 className="w-full h-[400px] object-cover transition-transform duration-300 group-hover:scale-105"
               />

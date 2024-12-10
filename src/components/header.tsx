@@ -52,7 +52,7 @@ export default function Header() {
         </h1>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-6 items-center">
+        <nav className="hidden md:flex space-x-6 items-center hover:text-underline">
           <a href="#" className="text-slate-600 hover:text-cyan-400">Home</a>
           <div className="flex items-center space-x-1">
             <a href="#" className="text-slate-600 hover:text-cyan-400">
@@ -60,8 +60,8 @@ export default function Header() {
             </a>
             <RiArrowDownSLine className="text-black hover:text-cyan-400" />
           </div>
-          <Link href="/about" className="text-slate-600 hover:text-cyan-400" legacyBehavior>
-  About
+          <Link href="/about" className="text-slate-600 " legacyBehavior>
+          <a href="#" className="hover:text-cyan-400"> About</a>
 </Link>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Blog</a>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Contact</a>
