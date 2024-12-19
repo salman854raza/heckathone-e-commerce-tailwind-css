@@ -1,4 +1,5 @@
 // import About from "@/components/about";
+import FeaturedPost from "@/components/FeaturedPost";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -13,6 +14,7 @@ export default function Home() {
     <Header/>
     <Navbar/> 
     <Hero/> 
+    <FeaturedPost/>
     {/* <About/> */}
     {/* <EditorsPick /> */}
     <Footer/>

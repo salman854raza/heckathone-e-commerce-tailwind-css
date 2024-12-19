@@ -1,0 +1,85 @@
+<section className="relative"></section>
+<div className="relative bg-green-900 border border-gray-300 rounded-lg sm:pt-4  lg:p-8 flex flex-col sm:gap-20 lg:gap-60 md:flex-row lg:flex-row md:justify-center md:items-center lg:justify-center lg:items-center">
+  {/* Content Section */}
+  <div className="flex flex-col gap-2 text-center lg:text-left lg:mb-24 lg:py-1">
+    <div className="text-white text-lg font-bold lg:mb-10 lg:py--2">
+      <h1 className='sm:pb-2 lg:pb-2'>SUMMER 2020</h1></div>
+    <h1 className="text-white text-10xl lg:text-6xl font-bold">
+      Vita Classic 
+    </h1>
+    <h1 className='text-white text-6xl lg:text-6xl font-bold'>Product</h1>
+    <p className="text-white text-sm max-w-sm mx-auto lg:mx-0">
+      We know how large objects will act, We know 
+    <br/>
+    how our objects will act, We know</p>
+    <div className="flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
+      <div className="text-white text-2xl font-bold">$16.48</div>
+      <button className="bg-green-500 hover:bg-green-600 text-white px-20 py-5 lg:px-10 lg:py-5 rounded-lg text-sm font-bold">
+        ADD TO CART
+      </button>
+    </div>
+  </div>
+
+  {/* Image Section */}
+  <div className="flex justify-center items-center lg:mt-10">
+    <img
+      src="./cover.2.png"
+      alt="Product Cover"
+      className="rounded-lg max-w-full h-auto shadow-lg"
+    />
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container--0-">
+  <div class="container-0-1-0">
+    <div class="container-1-2-0">
+      <div class="container-2-3-0"></div>
+      <div class="container-2-3-1">
+        <div class="container-3-4-0">
+          <div class="container-4-5-0">
+            <div class="text-5-6-0">SUMMER 2020</div>
+            <div class="text-5-6-1">Vita Classic Product</div>
+            <div class="text-5-6-2">
+              We know how large objects will act, We know how are objects will
+              act, We know
+            </div>
+            <div class="container-5-6-3">
+              <div class="text-6-7-0">$16.48</div>
+              <div class="container-6-7-1">
+                <div class="text-7-8-0">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+         <img src="./cover.2.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-0-1-1"></div>
+</div>

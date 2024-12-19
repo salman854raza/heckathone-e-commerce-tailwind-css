@@ -1,0 +1,133 @@
+<div className="relative w-full h-auto bg-white border border-solid border-[#dedede] rounded-md p-10 gap-8 flex flex-col justify-start items-start">
+  {/* Background Image */}
+  <div 
+    className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: "url('./cover.2.png')" }}
+  ></div>
+
+  {/* Content Overlay */}
+  <div className="relative flex flex-col justify-start items-start gap-8 w-full h-full z-10">
+    <div className="text-white text-[20px] font-[Montserrat] font-normal">
+      SUMMER 2020
+    </div>
+    <div className="text-white text-[58px] font-[Montserrat] font-bold">
+      Vita Classic Product
+    </div>
+    <div className="text-white text-[14px] font-[Montserrat] font-normal w-[341px]">
+      We know how large objects will act, We know how are objects will act, We know
+    </div>
+    <div className="flex items-center gap-8">
+      <div className="text-white text-[24px] font-[Montserrat] font-bold">
+        $16.48
+      </div>
+      <button className="bg-[#2dc071] text-white text-[14px] font-[Montserrat] font-bold px-10 py-4 rounded-md">
+        ADD TO CART
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container--0-">
+  <div class="container-0-1-0">
+    <div class="container-1-2-0">
+      <div class="container-2-3-0"></div>
+      <div class="container-2-3-1">
+        <div class="container-3-4-0">
+          <div class="container-4-5-0">
+            <div class="text-5-6-0">SUMMER 2020</div>
+            <div class="text-5-6-1">Vita Classic Product</div>
+            <div class="text-5-6-2">
+              We know how large objects will act, We know how are objects will
+              act, We know
+            </div>
+            <div class="container-5-6-3">
+              <div class="text-6-7-0">$16.48</div>
+              <div class="container-6-7-1">
+                <div class="text-7-8-0">ADD TO CART</div>
+              </div>
+            </div>
+          </div>
+          <svg
+            width="497"
+            height="597"
+            viewBox="0 0 497 597"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect
+              x="33.5"
+              width="443"
+              height="685"
+              fill="url(#pattern0_1_5246)"
+            ></rect>
+            <defs>
+              <pattern
+                id="pattern0_1_5246"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_1_5246"
+                  transform="matrix(0.00145773 0 0 0.000942734 0 -0.00530527)"
+                ></use>
+              </pattern>
+              <image
+                id="image0_1_5246"
+                width="686"
+                height="1072"
+                
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-0-1-1"></div>
+</div>

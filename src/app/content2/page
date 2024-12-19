@@ -1,0 +1,348 @@
+// "use client";
+
+// import React from "react";
+
+// // Product Interface
+// interface Product {
+//   id: number;
+//   title: string;
+//   price: number;
+//   originalPrice: number;
+//   imageUrl: string;
+// }
+
+// // ProductCard Component
+// const ProductCard = ({
+//   title,
+//   price,
+//   originalPrice,
+//   imageUrl,
+// }: Product) => {
+//   return (
+    
+//     <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer border border-gray-200 bg-white">
+//       <img
+//         src={imageUrl}
+//         alt={title}
+//         className="w-full h-56 object-cover transform transition-transform duration-300 group-hover:scale-110"
+//       />
+//       <div className="p-4">
+//         <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+//         <div className="mt-2 flex items-center gap-2">
+//           <span className="text-green-600 font-bold">${price.toFixed(2)}</span>
+//           <span className="text-gray-500 line-through">
+//             ${originalPrice.toFixed(2)}
+//           </span>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// // Main Product Component
+// const Product = () => {
+//   // Product List
+//   const products: Product[] = [
+//     { id: 1, title: "Graphic Design", price: 84.45, originalPrice: 99.99, imageUrl: "/fixed-height.png" },
+//     { id: 2, title: "Web Development", price: 150.0, originalPrice: 180.0, imageUrl: "/fixed-height 1.png" },
+//     { id: 3, title: "SEO Services", price: 70.5, originalPrice: 89.0, imageUrl: "/fixed-height 2.png" },
+//     { id: 4, title: "UI/UX Design", price: 110.0, originalPrice: 140.0, imageUrl: "/fixed-height 3.png" },
+//     { id: 5, title: "Graphic Design", price: 84.45, originalPrice: 99.99, imageUrl: "/fixed-height 4.png" },
+//     { id: 6, title: "Web Development", price: 150.0, originalPrice: 180.0, imageUrl: "/fixed-height 5.png" },
+//     { id: 7, title: "SEO Services", price: 70.5, originalPrice: 89.0, imageUrl: "/fixed-height 6.png" },
+//     { id: 8, title: "UI/UX Design", price: 110.0, originalPrice: 140.0, imageUrl: "/fixed-height 7.png" },
+//   ];
+
+//   const images = [
+//     "/images/image1.png",
+//     "/images/image2.png",
+//     "/images/image3.png",
+//     "/images/image4.png",
+//     "/images/image5.png",
+//   ];
+
+//   return (
+    
+//     <div className="bg-gray-100 text-gray-900">
+//       {/* Top Info Bar */}
+//       <div className="flex flex-wrap justify-between items-center px-4 py-2 text-sm bg-green-700 text-white">
+//         <div className="flex items-center gap-4">
+//           <span>📞 (225) 555-0118</span>
+//           <span>📧 michelle.rivera@example.com</span>
+//         </div>
+//         <div className="flex gap-4 items-center">
+//           <span className="font-semibold">
+//             Follow Us and get a chance to win 80% off
+//           </span>
+//           <div className="flex gap-2">
+//             <a href="#">📸</a>
+//             <a href="#">🎥</a>
+//             <a href="#">📘</a>
+//             <a href="#">🐦</a>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Navbar */}
+//       <div className="bg-black text-white px-4 py-3 flex justify-between items-center md:px-8">
+//         <div className="text-2xl font-bold">Bandage</div>
+//         <nav className="hidden md:flex gap-6">
+//           <a href="#" className="hover:text-blue-400">Home</a>
+//           <a href="#" className="hover:text-blue-400">Shop</a>
+//           <a href="#" className="hover:text-blue-400">About</a>
+//           <a href="#" className="hover:text-blue-400">Blog</a>
+//           <a href="#" className="hover:text-blue-400">Contact</a>
+//           <a href="#" className="hover:text-blue-400">Pages</a>
+//         </nav>
+//         <div className="flex items-center gap-4 text-blue-400">
+//           <a href="#">🔑 Login/Register</a>
+//           <a href="#">🔍</a>
+//           <a href="#">🛒 1</a>
+//           <a href="#">❤️ 1</a>
+//         </div>
+//         {/* Mobile Toggle */}
+//         <button className="md:hidden text-white text-2xl">☰</button>
+//       </div>
+
+//       {/* Bestseller Products */}
+//       <div className="bg-gray-200 py-16 px-4">
+//         <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+//           BESTSELLER PRODUCTS
+//         </h2>
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//           {products.map((product) => (
+//             <ProductCard key={product.id} {...product} />
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Responsive Image Grid */}
+//       <div className="px-4 py-8">
+//         <h2 className="text-center text-3xl font-bold mb-8">
+//           Responsive Image Grid
+//         </h2>
+//         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+//           {images.map((image, index) => (
+//             <div
+//               key={index}
+//               className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+//             >
+//               <img
+//                 src={image}
+//                 alt={`Image ${index + 1}`}
+//                 className="w-full h-56 object-cover transform transition-transform duration-300 group-hover:scale-110"
+//               />
+//               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100">
+//                 Image {index + 1}
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//       <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+//         <img src="/vector1.png" alt="Hooli" className="h-8 md:h-12" />
+//         <img src="/vector2.png" alt="Lyft" className="h-8 md:h-12" />
+//         <img src="/vector3.png" alt="Stripe" className="h-8 md:h-12" />
+//         <img src="/vector4.png" alt="AWS" className="h-8 md:h-12" />
+//         <img src="/vector5.png" alt="Reddit" className="h-8 md:h-12" />
+//       </div>
+      
+//     </div>
+    
+//   );
+// };
+
+// export default Product;
+
+
+
+
+
+
+
+
+
+// "use client";
+
+// import React, { useState } from "react";
+
+// // Product Interface
+// interface Product {
+//   id: number;
+//   title: string;
+//   price: number;
+//   originalPrice: number;
+//   imageUrl: string;
+// }
+
+// // ProductCard Component
+// const ProductCard: React.FC<Product> = ({
+//   title,
+//   price,
+//   originalPrice,
+//   imageUrl,
+// }) => (
+//   <div className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer border border-gray-200 bg-white">
+//     <img
+//       src={imageUrl}
+//       alt={title}
+//       className="w-full h-56 object-cover transform transition-transform duration-300 group-hover:scale-110"
+//     />
+//     <div className="p-4">
+//       <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+//       <div className="mt-2 flex items-center gap-2">
+//         <span className="text-green-600 font-bold">${price.toFixed(2)}</span>
+//         <span className="text-gray-500 line-through">
+//           ${originalPrice.toFixed(2)}
+//         </span>
+//       </div>
+//     </div>
+//   </div>
+// );
+
+// const ProductPage: React.FC = () => {
+//   const productImages = [
+//     "/images/shoes1.png",
+//     "/images/shoes2.png",
+//     "/images/shoes3.png",
+//     "/images/shoes4.png",
+//   ];
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+//   const nextImage = () => {
+//     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % productImages.length);
+//   };
+
+//   const prevImage = () => {
+//     setCurrentImageIndex(
+//       (prevIndex) => (prevIndex - 1 + productImages.length) % productImages.length
+//     );
+//   };
+
+//   const products: Product[] = [
+//     { id: 1, title: "Graphic Design", price: 84.45, originalPrice: 99.99, imageUrl: "/fixed-height.png" },
+//     { id: 2, title: "Web Development", price: 150.0, originalPrice: 180.0, imageUrl: "/fixed-height 1.png" },
+//     { id: 3, title: "SEO Services", price: 70.5, originalPrice: 89.0, imageUrl: "/fixed-height 2.png" },
+//     { id: 4, title: "UI/UX Design", price: 110.0, originalPrice: 140.0, imageUrl: "/fixed-height 3.png" },
+//   ];
+
+//   const images = [
+//     "/images/image1.png",
+//     "/images/image2.png",
+//     "/images/image3.png",
+//     "/images/image4.png",
+//     "/images/image5.png",
+//   ];
+
+//   return (
+//     <div className="bg-gray-100 text-gray-900">
+//       {/* Top Info Bar */}
+//       <div className="flex flex-wrap justify-between items-center px-4 py-2 text-sm bg-green-700 text-white">
+//         <div className="flex items-center gap-4">
+//           <span>📞 (225) 555-0118</span>
+//           <span>📧 michelle.rivera@example.com</span>
+//         </div>
+//         <div className="flex gap-4 items-center">
+//           <span className="font-semibold">
+//             Follow Us and get a chance to win 80% off
+//           </span>
+//           <div className="flex gap-2">
+//             <a href="#">📸</a>
+//             <a href="#">🎥</a>
+//             <a href="#">📘</a>
+//             <a href="#">🐦</a>
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* Navbar */}
+//       <div className="bg-black text-white px-4 py-3 flex justify-between items-center md:px-8">
+//         <div className="text-2xl font-bold">Bandage</div>
+//         <nav className="hidden md:flex gap-6">
+//           <a href="#" className="hover:text-blue-400">Home</a>
+//           <a href="#" className="hover:text-blue-400">Shop</a>
+//           <a href="#" className="hover:text-blue-400">About</a>
+//           <a href="#" className="hover:text-blue-400">Blog</a>
+//           <a href="#" className="hover:text-blue-400">Contact</a>
+//           <a href="#" className="hover:text-blue-400">Pages</a>
+//         </nav>
+//         <div className="flex items-center gap-4 text-blue-400">
+//           <a href="#">🔑 Login/Register</a>
+//           <a href="#">🔍</a>
+//           <a href="#">🛒 1</a>
+//           <a href="#">❤️ 1</a>
+//         </div>
+//         <button className="md:hidden text-white text-2xl">☰</button>
+//       </div>
+
+//       {/* Product Section */}
+//       <div className="flex flex-col items-center py-10">
+//         <h2 className="text-2xl font-bold mb-4">Stylish Shoes</h2>
+//         <div className="relative w-full max-w-md">
+//           <img
+//             src={productImages[currentImageIndex]}
+//             alt={`Shoe ${currentImageIndex + 1}`}
+//             className="w-full h-64 object-contain rounded-lg"
+//           />
+//           <button
+//             onClick={prevImage}
+//             className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+//           >
+//             &#8592;
+//           </button>
+//           <button
+//             onClick={nextImage}
+//             className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600"
+//           >
+//             &#8594;
+//           </button>
+//         </div>
+//         <p className="mt-4 text-gray-600">
+//           Comfortable and stylish shoes perfect for any occasion.
+//         </p>
+//         <div className="mt-4">
+//           <span className="text-green-600 font-bold">$49.99</span>
+//           <span className="text-gray-500 line-through ml-2">$69.99</span>
+//         </div>
+//       </div>
+
+//       {/* Bestseller Products */}
+//       <div className="bg-gray-200 py-16 px-4">
+//         <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+//           BESTSELLER PRODUCTS
+//         </h2>
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//           {products.map((product) => (
+//             <ProductCard key={product.id} {...product} />
+//           ))}
+//         </div>
+//       </div>
+
+//       {/* Responsive Image Grid */}
+//       <div className="px-4 py-8">
+//         <h2 className="text-center text-3xl font-bold mb-8">
+//           Responsive Image Grid
+//         </h2>
+//         <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+//           {images.map((image, index) => (
+//             <div
+//               key={index}
+//               className="group relative overflow-hidden rounded-lg shadow-lg cursor-pointer"
+//             >
+//               <img
+//                 src={image}
+//                 alt={`Image ${index + 1}`}
+//                 className="w-full h-56 object-cover transform transition-transform duration-300 group-hover:scale-110"
+//               />
+//               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-center justify-center text-white text-lg font-semibold opacity-0 group-hover:opacity-100">
+//                 Image {index + 1}
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ProductPage;

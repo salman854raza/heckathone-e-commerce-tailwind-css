@@ -91,7 +91,8 @@ export default function Header() {
             </span>
           </div>
           <div className="relative hover:text-cyan-400">
-            <IoIosCart />
+            <Link href="/product">
+            <IoIosCart /></Link>
             <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
               2
             </span>

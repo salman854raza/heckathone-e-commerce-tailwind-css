@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from "next/image";
+// import AsianWomanMan from "/public/asian-woman-man.png"; 
 
 export default function hero() {
   
@@ -119,36 +121,149 @@ export default function hero() {
           </div>
         </div>
       </section>
-      <section className="relative">
+      
   {/* First Image */}
-  <div className="w-full h-auto">
+  
+  <section className="flex flex-col lg:flex-row items-center justify-between w-full min-h-screen bg-green-500 p-6 lg:p-20 lg:gap-10">
+      {/* Text Content */}
+      <div className="text-center lg:text-left text-white lg:w-1/2">
+        {/* Subtitle */}
+        <p className="text-sm uppercase tracking-wide">Summer 2020</p>
+
+        {/* Title */}
+        <h1 className="mt-2 text-3xl lg:text-5xl font-bold">
+          Vita Classic Product
+        </h1>
+
+        {/* Description */}
+        <p className="mt-4 text-lg">
+          We know how large objects will act. We know how new objects will act,
+          and we know.
+        </p>
+
+        {/* Price and Button */}
+        <div className="mt-6 flex flex-col lg:flex-row gap-4 items-center lg:items-start">
+          {/* Price */}
+          <p className="text-2xl font-semibold">$16.48</p>
+
+          {/* Button */}
+          <button className="px-16 py-3 bg-white text-green-500 rounded-md font-medium hover:bg-green-600 hover:text-white transition">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+
+      {/* Image Content */}
+      <div className="mt-8 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end">
+        <Image
+          src="/cover.2.png"
+          alt="Vita Classic Product Image"
+          width={400}
+          height={400}
+          className="w-auto h-auto   rounded-lg shadow-lg hover:scale-105 transition-transform"
+        />
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  {/* <div className="w-full h-auto">
     <img 
       src="./menbggreen.png" 
       alt="Background Green" 
       className="w-full h-auto object-cover" 
     />
-  </div>
+  </div> */}
 
   {/* Second Image */}
-  <div className="w-full h-auto mt-4">
-    <img 
-      src="./neural-universe.png" 
-      alt="Neural Universe" 
-      className="w-full h-auto object-cover" 
-    />
-  </div>
 
-  {/* Third Image */}
-  <div className="w-full h-auto mt-4">
-    <img 
-      src="./Feature Post.png" 
-      alt="feature post" 
-      className="w-full h-auto object-cover" 
-    />
-  </div>
-</section>
+  
+  <section className="relative w-full bg-white py-16 px-6 lg:px-20">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8">
+       
+
+        {/* Content Section */}
+        <div className="flex-1 text-center lg:text-left">
+          {/* Subtitle */}
+          <p className="text-gray-500 text-sm uppercase tracking-wide">Summer 2020</p>
+
+          {/* Title */}
+          <h1 className="mt-2 text-2xl lg:text-4xl font-bold text-gray-800">
+            Part of the Neural Universe
+          </h1>
+
+          {/* Description */}
+          <p className="mt-4 text-gray-600">
+            We know how large objects will act, but things on a small scale.
+          </p>
+
+          {/* Buttons */}
+          <div className="mt-6 flex flex-col lg:flex-row gap-4 justify-center lg:justify-start">
+            <button className="px-6 py-3 bg-green-500 text-white rounded-md font-medium hover:bg-green-600 transition">
+              Buy Now
+            </button>
+            <button className="px-6 py-3 bg-transparent border border-green-500 text-green-500 rounded-md font-medium hover:bg-green-600 hover:text-white transition">
+              Read More
+            </button>
+          </div>
+        </div>
+         {/* Image Section */}
+         <div className="flex-1 flex justify-center lg:justify-start">
+          <Image
+            src="/asian-woman.png"
+            alt="Asian Woman and Man"
+            className="w-auto h-auto rounded-md shadow-lg"
+            width={400}
+            height={400}
+            priority
+          />
+        </div>
+      </div>
+      </section>
 
       </main>
       
   );
 }
+
+   
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

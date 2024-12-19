@@ -14,10 +14,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">Bandage</h3>
             <div className="flex space-x-4 text-blue-500">
-              <FaFacebook className="w-5 h-5 hover:text-green-500" />
-              <FaTwitter className="w-5 h-5 hover:text-green-500" />
-              <FaInstagram className="w-5 h-5 hover:text-green-500" />
-              <FaYoutube className="w-5 h-5 hover:text-green-500" />
+              <FaFacebook className="w-5 h-5" />
+              <FaTwitter className="w-5 h-5" />
+              <FaInstagram className="w-5 h-5" />
+              <FaYoutube className="w-5 h-5" />
             </div>
           </div>
           
