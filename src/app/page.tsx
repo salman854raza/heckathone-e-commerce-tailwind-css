@@ -1,9 +1,9 @@
 // import About from "@/components/about";
 import FeaturedPost from "@/components/FeaturedPost";
-import Footer from "@/components/footer";
+// import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/hero1";
 
 // import { EditorsPick } from '@/components/editors-pick/EditorsPick';
 // import Pagetwo from "./components/Pagetwo";
@@ -17,7 +17,7 @@ export default function Home() {
     <FeaturedPost/>
     {/* <About/> */}
     {/* <EditorsPick /> */}
-    <Footer/>
+    {/* <Footer/> */}
 
 
    </div>

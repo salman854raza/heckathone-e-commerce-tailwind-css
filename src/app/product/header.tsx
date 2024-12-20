@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       {/* Top Bar */}
-      <div className="flex flex-col md:flex-row items-center justify-between bg-black px-4 py-2 text-sm">
+      <div className="flex flex-col md:flex-row items-center justify-between bg-green-800 px-4 py-2 text-sm">
         {/* Phone */}
         <div className="flex items-center space-x-2 text-white font-bold">
           <FaPhoneAlt className="text-lg" />
@@ -53,7 +53,7 @@ export default function Header() {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-6 items-center hover:text-underline">
-          <a href="http://localhost:3000/" className="text-slate-600 hover:text-cyan-400">Home</a>
+          <a href="#" className="text-slate-600 hover:text-cyan-400">Home</a>
           <div className="flex items-center space-x-1">
           <Link href="/pricing" className="text-slate-600 " legacyBehavior>
             <a href="#" className="text-slate-600 hover:text-cyan-400">
@@ -67,7 +67,7 @@ export default function Header() {
           <a href="#" className="hover:text-cyan-400"> About</a>
           </Link>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Blog</a>
-          <Link href="/Contact" className="text-slate-600" legacyBehavior><a href="#" className="text-slate-600 hover:text-cyan-400">Contact</a></Link>
+          <a href="#" className="text-slate-600 hover:text-cyan-400">Contact</a>
           <a href="#" className="text-slate-600 hover:text-cyan-400">Price</a>
         </nav>
 

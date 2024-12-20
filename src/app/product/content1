@@ -1,0 +1,93 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <div className="bg-gray-100 text-gray-900"> 
+      {/* Top Info Bar */}
+      <div className="flex flex-wrap justify-between items-center px-4 py-2 text-sm bg-green-700 text-white">
+        <div className="flex items-center gap-4">
+          <span>📞 (225) 555-0118</span>
+          <span>📧 michelle.rivera@example.com</span>
+        </div>
+        <div className="flex gap-4 items-center">
+          <span className="font-semibold">
+            Follow Us and get a chance to win 80% off
+          </span>
+          <div className="flex gap-2">
+            <a href="#">📸</a>
+            <a href="#">🎥</a>
+            <a href="#">📘</a>
+            <a href="#">🐦</a>
+          </div>
+        </div>
+      </div>
+
+      {/* Navbar */}
+      <div className="bg-black text-white px-4 py-3 flex justify-between items-center md:px-8">
+        <div className="text-2xl font-bold">Bandage</div>
+        <nav className="hidden md:flex gap-6">
+          <a href="#" className="hover:text-blue-400">Home</a>
+          <a href="#" className="hover:text-blue-400">Shop</a>
+          <a href="#" className="hover:text-blue-400">About</a>
+          <a href="#" className="hover:text-blue-400">Blog</a>
+          <a href="#" className="hover:text-blue-400">Contact</a>
+          <a href="#" className="hover:text-blue-400">Pages</a>
+        </nav>
+        <div className="flex items-center gap-4 text-blue-400">
+          <a href="#">🔑 Login/Register</a>
+          <a href="#">🔍</a>
+          <a href="#">🛒 1</a>
+          <a href="#">❤️ 1</a>
+        </div>
+        {/* Mobile Toggle */}
+        <button className="md:hidden text-white text-2xl">☰</button>
+      </div> -->

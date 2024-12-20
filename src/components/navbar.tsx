@@ -1,109 +1,64 @@
-"use client";
-
-import { useState, useEffect } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+// Navbar.jsx
+import React from 'react';
+import Link from 'next/link';
+import { RiArrowDownSLine } from 'react-icons/ri';
+import { IoIosSearch,  IoIosCart,  } from 'react-icons/io';
+import { IoHeart, IoMenuSharp } from 'react-icons/io5';
 
 const Navbar = () => {
-  const images = [
-    "./bg2.png",
-    "./shoppingpic.jpg",
-    "./shoppinpic2.webp",
-    "./shoppingpic3.webp",
-  ];
-
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [direction, setDirection] = useState("right");
-
-  // Automatically change image every 3 seconds for a faster sliding effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext();
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [currentImageIndex]);
-
-  // Move to the next image
-  const handleNext = () => {
-    setDirection("right");
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  // Move to the previous image
-  const handlePrev = () => {
-    setDirection("left");
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
   return (
-    <div className="relative flex justify-center items-center w-full h-[50vh] sm:h-[60vh] lg:h-[716px] bg-gray-200 overflow-hidden">
-      {/* Image Slider */}
-      <div className="relative w-full h-full overflow-hidden">
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className={`absolute ${
-              index === currentImageIndex
-                ? "translate-x-0"
-                : direction === "right"
-                ? "-translate-x-full"
-                : "translate-x-full"
-            } transition-transform duration-700 ease-in-out ${
-              index === 3 ? "w-3/4 h-auto object-contain" : "w-full h-full object-cover"
-            }`} // Smaller size for shoppingpic3.webp
-          />
-        ))}
+    <header className="flex justify-between items-center py-4 px-6 bg-white shadow-md sticky top-0 z-50">
+      {/* Logo */}
+      <div className="text-2xl font-bold text-sky-400">
+        <Link href="/">MyBrand</Link>
       </div>
 
-      {/* Text Overlay */}
-      <div className="absolute inset-0 flex flex-col items-start justify-center  pl-10 sm:pl-16 lg:pl-20 text-white bg-black bg-opacity-30">
-        <h1 className="md-5 sm:text-xl">Summer 2020</h1>
-        <h1 className="text-3xl sm:text-5xl font-bold tracking-wider">
-          NEW COLLECTION
-        </h1>
-        <p className="mt-2 text-lg sm:text-xl lg:text-2xl text-gray-200 font-light">
-          We know how large objects will act, <br />
-          but things on a small scale.
-        </p>
-        <button className="flex md:items-center md:justify-center mt-5 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-lg sm:text-5xl md:text-3xl font-montserrat transition-all duration-300 ease-in-out shadow-lg ">
-          Shop Now
-        </button>
+      {/* Navigation Links */}
+      <nav className="hidden md:flex space-x-6 items-center">
+        <a href="#" className="text-slate-600 hover:text-cyan-400">Home</a>
+        <div className="flex items-center space-x-1">
+          <Link href="/pricing" legacyBehavior>
+            <a className="text-slate-600 hover:text-cyan-400">Shop</a>
+          </Link>
+          <RiArrowDownSLine className="text-black hover:text-cyan-400" />
+        </div>
+        <Link href="/about" legacyBehavior>
+          <a className="text-slate-600 hover:text-cyan-400">About</a>
+        </Link>
+        <a href="#" className="text-slate-600 hover:text-cyan-400">Blog</a>
+        <a href="#" className="text-slate-600 hover:text-cyan-400">Contact</a>
+        <a href="#" className="text-slate-600 hover:text-cyan-400">Price</a>
+      </nav>
+
+      {/* Login / Register */}
+      <div className="hidden md:flex items-center space-x-2 text-sky-400 font-bold">
+        <a href="#" className="hover:underline hover:text-cyan-400">Login</a>
+        <span>/</span>
+        <a href="#" className="hover:underline hover:text-cyan-400">Register</a>
       </div>
 
-      {/* Navigation Buttons */}
-      <button
-        onClick={handlePrev}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-3 shadow-md hover:bg-green-500 transition-all duration-300 ease-in-out"
-      >
-        <FaArrowLeft size={24} />
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white rounded-full p-3 shadow-md hover:bg-green-500 transition-all duration-300 ease-in-out"
-      >
-        <FaArrowRight size={24} />
-      </button>
-
-      {/* Dots */}
-      <div className="absolute bottom-10  flex space-x-3">
-        {images.map((_, index) => (
-          <div
-            key={index}
-            className={`h-3 w-3 rounded-full transition-all duration-500 ${
-              index === currentImageIndex
-                ? "w-5 h-5 bg-green-500 scale-110" // Enlarged and green for active dot
-                : "bg-gray-400"
-            }`}
-          ></div>
-        ))}
+      {/* Icons */}
+      <div className="flex items-center space-x-4 text-xl text-sky-400">
+        <a href="#" className="hover:text-cyan-400">
+          <IoIosSearch />
+        </a>
+        <div className="relative hover:text-cyan-400">
+          <IoHeart />
+          <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+            3
+          </span>
+        </div>
+        <div className="relative hover:text-cyan-400">
+          <Link href="/product">
+            <IoIosCart />
+          </Link>
+          <span className="absolute -top-2 -right-3 bg-red-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+            2
+          </span>
+        </div>
+        <IoMenuSharp className="block md:hidden hover:text-cyan-400" />
       </div>
-    </div>
+    </header>
   );
 };
 

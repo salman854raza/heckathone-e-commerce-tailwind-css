@@ -8,57 +8,63 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-white pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Bandage</h3>
-            <div className="flex space-x-4 text-blue-500">
-              <FaFacebook className="w-5 h-5 hover:text-green-500" />
-              <FaTwitter className="w-5 h-5 hover:text-green-500" />
-              <FaInstagram className="w-5 h-5 hover:text-green-500" />
-              <FaYoutube className="w-5 h-5 hover:text-green-500" />
-            </div>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold mb-4">Company Info</h4>
-            <ul className="space-y-3 text-gray-600">
-              <li>About Us</li>
-              <li>Carrier</li>
-              <li>We are hiring</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
-            <ul className="space-y-3 text-gray-600">
-              <li>About Us</li>
-              <li>Carrier</li>
-              <li>We are hiring</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Features</h4>
-            <ul className="space-y-3 text-gray-600">
-              <li>Business Marketing</li>
-              <li>User Analytics</li>
-              <li>Live Chat</li>
-              <li>Unlimited Support</li>
-            </ul>
-          </div>
+    <footer className="bg-gray-50 py-8 px-4 md:px-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div className="col-span-1 md:col-span-2">
+          <h2 className="text-2xl font-bold mb-4">Bandage</h2>
+          <p className="text-gray-500 text-sm">
+            Made With Love By Finland All Right Reserved
+          </p>
         </div>
-        
-        <div className="border-t pt-8">
-          <p className="text-center text-gray-600">
-            Made With Love By Bolt All Right Reserved
+        <div>
+          <h3 className="font-semibold mb-2">Company Info</h3>
+          <ul className="space-y-2 text-gray-500 text-sm">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Legal</h3>
+          <ul className="space-y-2 text-gray-500 text-sm">
+            <li>About Us</li>
+            <li>Carrier</li>
+            <li>We are hiring</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Features</h3>
+          <ul className="space-y-2 text-gray-500 text-sm">
+            <li>Business Marketing</li>
+            <li>User Analytic</li>
+            <li>Live Chat</li>
+            <li>Unlimited Support</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-semibold mb-2">Get In Touch</h3>
+          <div className="flex space-x-2 mb-2">
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="w-full border rounded px-4 py-2 text-sm focus:outline-none"
+            />
+            <button className="bg-blue-500 text-white rounded px-4 py-2 text-sm">
+              Subscribe
+            </button>
+          </div>
+          <p className="text-gray-400 text-xs">
+            Lorem imp sum dolor Amit.
           </p>
         </div>
       </div>
+      <div className="text-center text-gray-400 text-sm mt-8">
+        Made With Love By Finland All Right Reserved
+      </div>
     </footer>
+
       );
 };
 
