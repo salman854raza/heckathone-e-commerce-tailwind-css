@@ -15,7 +15,7 @@ const Navbar = () => {
 
       {/* Navigation Links */}
       <nav className="hidden md:flex space-x-6 items-center">
-        <a href="#" className="text-slate-600 hover:text-cyan-400">Home</a>
+        <a href="Home" className="text-slate-600 hover:text-cyan-400">Home</a>
         <div className="flex items-center space-x-1">
           <Link href="/pricing" legacyBehavior>
             <a className="text-slate-600 hover:text-cyan-400">Shop</a>

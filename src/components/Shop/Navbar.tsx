@@ -7,7 +7,7 @@ export const Navbar: React.FC = () => {
         <div className="text-2xl font-bold text-gray-900">Bandage</div>
         
         <div className="hidden md:flex items-center space-x-8">
-          <NavLink href="http://localhost:3000" label="Home" />
+          <NavLink href="Home" label="Home" />
           <NavLink href="/product" label="Product" />
           <NavLink href="/pricing" label="Pricing" />
           <NavLink href="/Contact" label="Contact" />

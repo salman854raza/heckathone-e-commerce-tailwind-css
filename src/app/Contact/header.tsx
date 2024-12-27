@@ -8,7 +8,7 @@ export default function header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Bandage</h1>
           <nav className="space-x-6 hidden md:flex">
-            <a href="http://localhost:3000/" className="hover:underline">
+            <a href="Home" className="hover:underline">
               Home
             </a>
             <a href="/product" className="hover:underline">

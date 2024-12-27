@@ -18,7 +18,7 @@ export default function About() {
         {/* Navbar Links for Larger Screens */}
         <nav className="hidden md:flex gap-6 items-center">
           <a
-            href="http://localhost:3000/"
+            href="Home"
             className="text-white hover:text-gray-200 text-lg md:text-base transition-colors duration-300"
           >
             Home

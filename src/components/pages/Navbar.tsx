@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="flex gap-6 items-center">
       {/* Navigation Links */}
       {[
-        { name: "Home", href: "http://localhost:3000" },
+        { name: "Home", href: "Home" },
         { name: "Product", href: "/product" },
         { name: "Pricing", href: "/pricing" },
         { name: "Contact", href: "/contact" },

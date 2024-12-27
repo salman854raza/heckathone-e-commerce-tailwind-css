@@ -76,7 +76,7 @@ export default function Header() {
             menuOpen ? "block" : "hidden"
           } md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center absolute md:static bg-green-600 w-full md:w-auto p-4 md:p-0 left-0 top-full md:top-auto z-10`}
         >
-          <a href="http://localhost:3000/" className="text-white hover:text-cyan-400">
+          <a href="Home" className="text-white hover:text-cyan-400">
             Home
           </a>
          
