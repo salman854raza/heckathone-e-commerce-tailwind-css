@@ -18,7 +18,7 @@ export default function About() {
         {/* Navbar Links for Larger Screens */}
         <nav className="hidden md:flex gap-6 items-center">
           <a
-            href="/"
+            href="http://localhost:3000/"
             className="text-white hover:text-gray-200 text-lg md:text-base transition-colors duration-300"
           >
             Home
@@ -36,7 +36,7 @@ export default function About() {
             Pricing
           </a>
           <a
-            href="/contact"
+            href="/Contact"
             className="text-white hover:text-gray-200 text-lg md:text-base transition-colors duration-300"
           >
             Contact

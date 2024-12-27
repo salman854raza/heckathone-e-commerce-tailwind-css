@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import { FiCheck } from "react-icons/fi";
@@ -240,13 +241,13 @@ const Plan = () => {
           Trusted By Over 4000 Big Companies
         </h3>
         <div className="flex justify-center items-center mt-6">
-          <Image
-            src={"/companies.png"}
-            alt="companies"
-            width={1054}
-            height={175}
-            className="w-full max-w-[90%] sm:max-w-[1054px] h-auto"
-          />
+        <Head>
+  <link
+    rel="preload"
+    href="/companies.png"
+    as="image"
+  />
+</Head>
         </div>
       </div>
     </div>

@@ -11,13 +11,13 @@ export default function header() {
             <a href="http://localhost:3000/" className="hover:underline">
               Home
             </a>
-            <a href="#product" className="hover:underline">
+            <a href="/product" className="hover:underline">
               Product
             </a>
-            <a href="#pricing" className="hover:underline">
+            <a href="/pricing" className="hover:underline">
               Pricing
             </a>
-            <a href="#contact" className="hover:underline">
+            <a href="/Contact" className="hover:underline">
               Contact
             </a>
           </nav>

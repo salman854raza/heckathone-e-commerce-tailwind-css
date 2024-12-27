@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 
@@ -50,14 +51,13 @@ const Problem = () => {
 
       {/* Image Section */}
       <div className="mt-16 sm:mt-20 flex justify-center items-center mx-6 sm:mx-36">
-        <Image 
-          src="/problem.png" 
-          alt="Problem solving illustration" 
-          width={989} 
-          height={540}
-          priority
-          className="w-auto h-auto"
-        />
+      <Head>
+  <link
+    rel="preload"
+    href="/companies.png"
+    as="image"
+  />
+</Head>
       </div>
     </div>
   );
