@@ -26,7 +26,7 @@ export default function header() {
               Login
             </button>
             <button className="text-sm bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200">
-              Become a member
+              Become member
             </button>
           </div>
         </div>
