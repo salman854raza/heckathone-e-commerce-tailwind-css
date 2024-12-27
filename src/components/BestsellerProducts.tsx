@@ -1,4 +1,5 @@
 import React from 'react';
+// import { ProductCard } from './Shop/ProductCard';
 import { ProductCard } from './ProductCard';
 
 interface Product {
