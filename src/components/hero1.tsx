@@ -1,5 +1,6 @@
 "use client";
 
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
@@ -71,9 +72,11 @@ const Navbar = () => {
           We know how large objects will act, <br />
           but things on a small scale.
         </p>
+        <Link href="/product">
         <button className="flex md:items-center md:justify-center mt-5 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg text-lg sm:text-5xl md:text-3xl font-montserrat transition-all duration-300 ease-in-out shadow-lg ">
           Shop Now
         </button>
+        </Link>
       </div>
 
       {/* Navigation Buttons */}

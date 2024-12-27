@@ -11,8 +11,8 @@ export default function hero() {
     "./women4.png",
     "./women5.png",
     "./men1.png",
-    "./product-cover-5.png",
-    "./product-cover-5.png",
+    "./feature6.png",
+    "./card6.png",
     "./cover1.png",
   ];
 
@@ -30,7 +30,7 @@ export default function hero() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="flex justify center items-center grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4">
             {/* Men */}
             <div className="relative group overflow-hidden">
               <img 
@@ -44,7 +44,7 @@ export default function hero() {
             </div>
 
             {/* Women */}
-            <div className="relative group overflow-hidden">
+            <div className="relative group overflow-hidden px-16">
               <img 
                 src="./women6.png"
                 alt="Women's Fashion"
@@ -54,8 +54,10 @@ export default function hero() {
                 <h3 className="text-white text-xl font-bold text-center">WOMEN</h3>
               </div>
             </div>
+            
 
             {/* Accessories */}
+            <div className='flex justify-center items-center grid lg:grid-rows-2 py-16'>
             <div className="relative group overflow-hidden">
               <img 
                 src="./womens2.png"
@@ -66,6 +68,7 @@ export default function hero() {
                 <h3 className="text-white text-xl font-bold text-center">ACCESSORIES</h3>
               </div>
             </div>
+            
 
             {/* Kids */}
             <div className="relative group overflow-hidden">
@@ -77,7 +80,8 @@ export default function hero() {
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/50 to-transparent">
                 <h3 className="text-white text-xl font-bold text-center">KIDS</h3>
               </div>
-            </div>
+              </div>
+              </div>
           </div>
         </div>
 
@@ -96,7 +100,7 @@ export default function hero() {
                   <img
                     src={image}
                     alt={`Product ${index + 1}`}
-                    className="w-full aspect-[3/4] object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full aspect-[3/4] object-fit hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="p-4 text-center">
@@ -169,37 +173,7 @@ export default function hero() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  {/* <div className="w-full h-auto">
-    <img 
-      src="./menbggreen.png" 
-      alt="Background Green" 
-      className="w-full h-auto object-cover" 
-    />
-  </div> */}
-
-  {/* Second Image */}
-
-  
-  <section className="relative w-full bg-white py-16 px-6 lg:px-20">
+<section className="relative w-full bg-white py-16 px-6 lg:px-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center gap-8">
        
 
